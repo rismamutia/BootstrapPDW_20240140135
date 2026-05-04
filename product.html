@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product - FloraShop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --pink-dark:#c94f6d; --pink-mid:#e8728a; --pink-light:#f4a0b5; --pink-pale:#fce8ed; --green-leaf:#6aaa7a; --gold:#f4c430; --cream:#fff8f0; }
+    body { background-color: var(--cream); font-family: 'Lato', sans-serif; }
+    .navbar { background: linear-gradient(135deg, var(--pink-dark) 0%, var(--pink-mid) 100%); box-shadow: 0 2px 12px rgba(200,80,110,.25); }
+    .navbar-brand { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #fff !important; }
+    .nav-link { color: rgba(255,255,255,.85) !important; font-weight: 600; transition: color .2s; }
+    .nav-link:hover, .nav-link.active { color: var(--gold) !important; }
+    .navbar-toggler { border-color: rgba(255,255,255,.4); }
+    .section-heading { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--pink-dark); }
+    .divider-flower { width: 60px; height: 4px; background: linear-gradient(90deg, var(--pink-mid), var(--gold)); border-radius: 2px; margin: .5rem 0 1.5rem; }
+    .page-banner { background: linear-gradient(135deg, var(--pink-pale), #ffe4ec); padding: 60px 0; }
+    .flower-card { border: none; border-radius: 18px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,.07); transition: transform .25s, box-shadow .25s; }
+    .flower-card:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(200,80,110,.15); }
+    .img-placeholder { height: 200px; display: flex; align-items: center; justify-content: center; font-size: 4rem; background: linear-gradient(135deg, var(--pink-pale), #ffe0ea); }
+    .flower-card .card-body { background: #fff; padding: 1.4rem; }
+    .flower-card .card-title { font-family: 'Playfair Display', serif; color: var(--pink-dark); }
+    .flower-card .card-text { color: #7a5c65; font-size: .93rem; }
+    .badge-flower { background: var(--pink-pale); color: var(--pink-dark); font-size: .75rem; padding: .35em .8em; border-radius: 50px; font-weight: 700; }
+    .btn-flower { background: var(--pink-dark); color: #fff; border: none; padding: .55rem 1.4rem; border-radius: 50px; font-weight: 700; transition: all .2s; }
+    .btn-flower:hover { background: #a83058; color: #fff; }
+    .filter-btn { background: #fff; color: var(--pink-dark); border: 2px solid var(--pink-mid); border-radius: 50px; padding: .4rem 1.2rem; font-weight: 600; transition: all .2s; cursor: pointer; }
+    .filter-btn:hover, .filter-btn.active { background: var(--pink-dark); color: #fff; border-color: var(--pink-dark); }
+    footer { background: var(--pink-dark); color: rgba(255,255,255,.85); font-size: .9rem; }
+    footer a { color: var(--gold); text-decoration: none; }
+    footer .footer-brand { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: #fff; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="pic/lily.jpg" alt="Logo" width="38" height="38" />
+        FloraShop
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="product.html">Product</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner text-center">
+    <div style="font-size:5rem;">💐</div>
+    <h1 class="section-heading">Koleksi Bunga Kami</h1>
+    <div class="divider-flower mx-auto"></div>
+    <p style="color:#7a5c65;">Pilih dari ratusan jenis bunga segar pilihan terbaik</p>
+  </section>
+
+
+  <!-- PRODUCT GRID -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-md-4 col-sm-6">
+          <div class="flower-card card">
+            <div class="img-placeholder">🌹</div>
+            <div class="card-body">
+              <span class="badge-flower mb-2">Best Seller</span>
+              <h5 class="card-title mt-1">Mawar Merah Premium</h5>
+              <p class="card-text">Segar, harum, dan tahan lama. Cocok untuk hadiah orang tersayang.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="fw-bold" style="color:var(--pink-dark);font-size:1.1rem;">Rp 45.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="flower-card card">
+            <div class="img-placeholder">🌷</div>
+            <div class="card-body">
+              <span class="badge-flower mb-2">Baru</span>
+              <h5 class="card-title mt-1">Tulip Belanda Mix</h5>
+              <p class="card-text">Warna-warni cerah yang menyegarkan suasana ruangan.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="fw-bold" style="color:var(--pink-dark);font-size:1.1rem;">Rp 55.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="flower-card card">
+            <div class="img-placeholder">🌻</div>
+            <div class="card-body">
+              <span class="badge-flower mb-2">Populer</span>
+              <h5 class="card-title mt-1">Bunga Matahari</h5>
+              <p class="card-text">Cerah dan menggembirakan, sempurna untuk dekorasi rumah.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="fw-bold" style="color:var(--pink-dark);font-size:1.1rem;">Rp 35.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="flower-card card">
+            <div class="img-placeholder">🌸</div>
+            <div class="card-body">
+              <span class="badge-flower mb-2">Langka</span>
+              <h5 class="card-title mt-1">Sakura Import</h5>
+              <p class="card-text">Keindahan musim semi Jepang hadir di tanganmu.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="fw-bold" style="color:var(--pink-dark);font-size:1.1rem;">Rp 85.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="flower-card card">
+            <div class="img-placeholder">🪷</div>
+            <div class="card-body">
+              <span class="badge-flower mb-2">Eksotis</span>
+              <h5 class="card-title mt-1">Lotus Merah Muda</h5>
+              <p class="card-text">Simbol kesucian dan ketenangan, cocok untuk meditasi ruang.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="fw-bold" style="color:var(--pink-dark);font-size:1.1rem;">Rp 75.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="flower-card card">
+            <div class="img-placeholder">💐</div>
+            <div class="card-body">
+              <span class="badge-flower mb-2">Spesial</span>
+              <h5 class="card-title mt-1">Buket Anniversary</h5>
+              <p class="card-text">Rangkaian bunga spesial untuk momen perayaan tak terlupakan.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="fw-bold" style="color:var(--pink-dark);font-size:1.1rem;">Rp 150.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6"><span class="footer-brand">🌺 FloraShop</span></div>
+        <div class="col-md-6 text-md-end mt-3 mt-md-0">
+          <a href="index.html">Home</a> &nbsp;·&nbsp;
+          <a href="about.html">About</a> &nbsp;·&nbsp;
+          <a href="product.html">Product</a>
+        </div>
+      </div>
+      <hr style="border-color:rgba(255,255,255,.2); margin:1rem 0;" />
+      <p class="text-center mb-0" style="font-size:.8rem; opacity:.6;">© 2025 FloraShop · Praktikum Bootstrap</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Filter button active state
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
+
